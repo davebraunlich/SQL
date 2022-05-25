@@ -1,0 +1,26 @@
+CREATE TABLE "store" (Item TEXT PRIMARY KEY,Price INTEGER,Stock INTEGER,Attire TEXT,Sold_Q1 INTEGER,SOLD_Q2 INTEGER);
+INSERT INTO store VALUES ("Jeans",35,125,"Casual",60,51);
+INSERT INTO store VALUES ("TShirts",12,140,"Casual",60,62);
+INSERT INTO store VALUES ("Socks",15,54,"Casual",12,28);
+INSERT INTO store VALUES ("Dress_Socks",22,60,"Formal",7,32);
+INSERT INTO store VALUES ("Ties",18,60,"Formal",12,18);
+INSERT INTO store VALUES ("Button_Downs",27,100,"Formal",22,32);
+INSERT INTO store VALUES ("Bow_Ties",20,40,"Formal",4,7);
+INSERT INTO store VALUES ("Cuff_Links",55,15,"Formal",4,12);
+INSERT INTO store VALUES ("Blazers",110,70,"Formal",22,26);
+INSERT INTO store VALUES ("Vests", 42,20,"Formal",6,10);
+INSERT INTO store VALUES ("Dress_Shoes",85,35,"Formal",12,32);
+INSERT INTO store VALUES ("Tennis_Shoes",70,30,"Casual",16,16);
+INSERT INTO store VALUES ("Boxers",13,20,"Casual",7,13);
+INSERT INTO store VALUES ("Briefs",10,20,"Casual",6,12);
+INSERT INTO store VALUES ("Boxer-Briefs",16,20,"Casual",4,13);
+INSERT INTO store VALUES ("Tie_Clips",21,10,"Formal",4,5);
+INSERT INTO store VALUES ("Handcerchiefs",14,10,"Formal",6,4);
+INSERT INTO store VALUES ("Sunglasses",66,32,"Casual",1,18);
+
+SELECT * FROM store WHERE attire="Formal";
+SELECT * FROM store WHERE attire="Casual";
+SELECT * FROM store WHERE Sold_Q1<Sold_Q2;
+SELECT * FROM store WHERE Sold_Q1>Sold_Q2;
+
+
