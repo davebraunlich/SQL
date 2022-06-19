@@ -31,3 +31,10 @@ SELECT COUNT(customers.acctnum), AVG(quantity)*price FROM FebSales
 LEFT JOIN customers
 ON FebSales.orderID=customers.order_id
 WHERE FebSales.Quantity > 1;
+
+#8 List all of the products that were sold in Los Angeles in February, and how many of each were sold.
+
+SELECT product, SUM (quantity) FROM FebSales
+Where location LIKE "%Los Angeles%"
+GROUP BY product
+
